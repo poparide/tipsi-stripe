@@ -135,6 +135,9 @@ export default class PaymentCardTextField extends Component {
   isFocused = () => TextInputState.currentlyFocusedInput() === findNodeHandle(this.cardTextFieldRef)
 
   focus = () => {
+    console.log('types of this...');
+    console.log(typeof this);
+    console.log(typeof findNodeHandle(this));
     TextInputState.focusTextInput(this)
   }
 
