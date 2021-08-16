@@ -139,7 +139,7 @@ export default class PaymentCardTextField extends Component {
   }
 
   blur = () => {
-    TextInputState.blurTextInput(this.cardTextFieldRef)
+    TextInputState.blurTextInput(findNodeHandle(this.cardTextFieldRef))
   }
 
   handlePress = () => {
